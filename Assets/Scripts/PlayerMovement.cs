@@ -20,9 +20,12 @@ public class PlayerMovement : MonoBehaviour
     void Update()
     {
         change = Vector3.zero;
-        animator.SetBool("moving", false);
         change.x = Input.GetAxisRaw("Horizontal");
         change.y = Input.GetAxisRaw("Vertical");
+    }
+
+    void FixedUpdate() {
+        animator.SetBool("moving", false);
         if (change != Vector3.zero)
         {
             MovePlayer();
@@ -31,8 +34,8 @@ public class PlayerMovement : MonoBehaviour
     }
 
     void MovePlayer()
-    {
-        transform.Translate(new Vector3(change.x, change.y).normalized * speed * Time.deltaTime);
+    { 
+        player.MovePosition(transform.position + speed * Time.deltaTime * change.normalized);
     }
 
     void AnimatePlayerWalk()

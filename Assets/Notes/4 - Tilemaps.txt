@@ -1,0 +1,11 @@
+Multiple spritesheet, import this correctly by setting to multiple and slicing the sprites by cell size.
+
+Tilemap is a 2D object. Create it from the Objects view.
+Select Rectangular if a type is needed.
+
+To use this we need a tile palette. Create a new palette from the Window dropdown, call it Ground (for instance).
+Save in Assets/Tile Palettes folder.
+Drag Overworld multiple sprite into the tile palette itself, let import.
+
+IMPORTANT!!! For Rect Tool issues with Tilemaps, need to use Compress Tilemap Bounds.
+This is because the total area of the tilemap also includes previously existing and then deleted tiles.

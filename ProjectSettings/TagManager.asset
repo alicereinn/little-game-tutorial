@@ -41,3 +41,12 @@ TagManager:
   - name: Default
     uniqueID: 0
     locked: 0
+  - name: Buildings (Lower)
+    uniqueID: 1621324433
+    locked: 0
+  - name: Player
+    uniqueID: 3278335313
+    locked: 0
+  - name: Buildings (Upper)
+    uniqueID: 2631699733
+    locked: 0
