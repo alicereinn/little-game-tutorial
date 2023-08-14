@@ -1,0 +1,4 @@
+We want to move the camera in LateUpdate so that we are sure it moves after the player.
+The Lerp should not involve the z-coordinate, that one should remain constant.
+
+Sprite Atlas is given as a potential solution for tearing. Worth looking into if the game actually begins to tear.

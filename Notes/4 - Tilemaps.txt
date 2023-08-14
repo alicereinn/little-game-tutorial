@@ -9,3 +9,6 @@ Drag Overworld multiple sprite into the tile palette itself, let import.
 
 IMPORTANT!!! For Rect Tool issues with Tilemaps, need to use Compress Tilemap Bounds.
 This is because the total area of the tilemap also includes previously existing and then deleted tiles.
+
+The physics for the character should be in FixedUpdate, and the Transform should not bnbe changed directly.
+Need to use MovePosition instead.
